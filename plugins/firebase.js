@@ -1,6 +1,4 @@
 import firebase from 'firebase'
-// const serviceAccount = require('./config/keys')
-// import serviceAccount from '../server/config/serviceAccountKey.json'
 import serviceAccount from '../server/config/keys'
 
 const config = {

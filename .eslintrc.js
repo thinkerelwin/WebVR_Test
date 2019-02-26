@@ -6,7 +6,6 @@ module.exports = {
   },
   parserOptions: {
     parser: 'babel-eslint',
-    allowImportExportEverywhere: true
   },
   extends: [
     '@nuxtjs',

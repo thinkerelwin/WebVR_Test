@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 
 export default {
   data() {
@@ -29,7 +29,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['currentPanoramasList'])
+    ...mapGetters(['currentPanoramasList'])
   },
   watch: {
     currentPanoramasList() {
@@ -37,7 +37,8 @@ export default {
     }
   },
   mounted() {
-    this.getPanoramasList()
+    const exampleID = 'cc242ca9-17a3-47e5-bdd9-a12582e90752'
+    this.getPanoramasList(exampleID)
   },
   methods: {
     ...mapActions(['getPanoramasList']),
